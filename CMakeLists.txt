@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   message_runtime
   std_msgs
   geometry_msgs
+  roscpp
+  rospy
 )
 
 ## System dependencies are found with CMake's conventions
@@ -55,11 +57,14 @@ find_package(catkin REQUIRED COMPONENTS
  )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+ add_service_files(
+   FILES
+   BeakerMani.srv
+   pHMeasure.srv
+   PipetteDo.srv
+   TweezersDraw.srv
+   PipetteDoTwice.srv
+ )
 
 ## Generate actions in the 'action' folder
 # add_action_files(

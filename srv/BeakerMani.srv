@@ -1,0 +1,6 @@
+# input 
+bool shake
+---
+# output
+bool success
+string message
